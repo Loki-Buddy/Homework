@@ -1,0 +1,48 @@
+Aufgabe: Baue deine erste eigene API
+
+Ziel: Du sollst dein Wissen über Node.js, npm und Express anwenden und vertiefen.
+
+    1.    Erstelle ein neues Projektverzeichnis:mkdir meine-api
+cd meine-api
+npm init -y
+npm install express
+
+    2.    Erstelle eine Datei index.js mit folgendem Inhalt:
+
+const express = require("express");
+const app = express();
+
+app.get("/", (req, res) => {
+  res.send("Willkommen bei meiner eigenen API!");
+});
+
+app.get("/data", (req, res) => {
+  res.json([
+    { id: 1, name: "Max" },
+    { id: 2, name: "Lena" }
+  ]);
+});
+
+app.listen(3000, () => {
+  console.log("Server läuft auf http://localhost:3000&quot;);
+});
+
+   3.    Starte deine API:
+   •    Entweder über npm start (wenn package.json entsprechend konfiguriert ist)
+   •    Oder direkt mit node index.js
+
+   4.    Teste deine API mit Postman
+   •    URL: http://localhost:3000
+   •    Route: /data
+  
+5. Weitere Route erstellen
+ Füge eine Route /randomname hinzu und verwende das Paket sillyname, um zufällig generierte Namen als Response anzuzeigen.
+
+6. (optional)
+Gerne weitere Ideen umsetzen wenn ihr noch Zeit habt
+
+Abgabe: Github Repo & Screenshot von Postman wo die verschiedenen Routen und deren Ergebnis angezeigt wird
+
+
+Viel Erfolg & bis morgen
+Suheib
