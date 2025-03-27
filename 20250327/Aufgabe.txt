@@ -1,0 +1,27 @@
+Aufgabe:
+Erstelle deine eigene kleine API – z. B. für ein Tierheim oder ein anderes Thema deiner Wahl.
+
+Die API sollte folgende Routen enthalten:
+   1.    GET /tiere
+→ Gibt eine Liste aller Tiere zurück
+   2.    GET /tiere/search?art=hund
+→ Filtert nach einer Tierart (z. B. Hund, Katze)
+   3.    GET /tiere/:id
+→ Gibt nur das Tier mit der angegebenen ID zurück
+   4.    POST /tiere
+→ Fügt ein neues Tier zur Liste hinzu (über JSON-Body)
+
+Beispieldatenstruktur:
+
+const tiere = [
+  { id: 1, name: "Bello", art: "Hund", alter: 3 },
+  { id: 2, name: "Mieze", art: "Katze", alter: 5 }
+];
+
+
+Zusatzaufgabe (optional):
+Speichere die Daten nicht nur im Code, sondern in einer .json-Datei mit dem fs-Modul.
+So bleiben die Daten auch nach dem Neustart erhalten – wie in einer einfachen Mini-Datenbank.
+
+Viel Erfolg & viel Spaß. Bis morgen!
+Suheib
