@@ -3,13 +3,13 @@ const app = express();
 const fs = require("fs");
 app.use(express.json());
 
-/* const tiere = [
+const tiere = [
     { id: 1, name: "Ally", art: "Hund", alter: 7 },
     { id: 2, name: "Bella", art: "Hund", alter: 6.5 },
     { id: 3, name: "Molly", art: "Katze", alter: 12 },
     { id: 4, name: "Fusel", art: "Katze", alter: 5 },
     { id: 5, name: "Justin", art: "Katze", alter: 3 }
-]; */
+];
 
 app.get("/tiere", (req, res) => {
     res.send(tiere);
