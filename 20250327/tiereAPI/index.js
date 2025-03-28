@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const fs = require("fs");
 
 const tiere = [
     { id: 1, name: "Ally", art: "Hund", alter: 7 },
@@ -8,6 +9,8 @@ const tiere = [
     { id: 4, name: "Fusel", art: "Katze", alter: 5 },
     { id: 5, name: "Justin", art: "Katze", alter: 3 }
 ];
+
+
 
 app.get("/tiere", (req, res) => {
     res.send(tiere);
