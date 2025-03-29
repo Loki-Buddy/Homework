@@ -1,0 +1,11 @@
+# Node.js spezifische Dateien
+node_modules/
+npm-debug.log
+.env
+
+# Logs
+*.log
+
+# Betriebssystem-spezifische Dateien
+.DS_Store
+Thumbs.db
