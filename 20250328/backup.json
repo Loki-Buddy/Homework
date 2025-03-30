@@ -1,0 +1,87 @@
+[
+  {
+    "id": 1,
+    "first_name": "Anna",
+    "last_name": "Müller",
+    "birthdate": "1990-05-14",
+    "physical_attributes": {
+      "height": 175,
+      "weight": 60
+    },
+    "adress": {
+      "street": "Musterstraße 123",
+      "city": "Musterstadt",
+      "zip_code": "12345"
+    },
+    "department": "Marketing",
+    "supervisor": "Max Schneider"
+  },
+  {
+    "id": 2,
+    "first_name": "Max",
+    "last_name": "Schneider",
+    "birthdate": "1985-11-23",
+    "physical_attributes": {
+      "height": 180,
+      "weight": 75
+    },
+    "adress": {
+      "street": "Bundesstraße 456",
+      "city": "Bundesstadt",
+      "zip_code": "54321"
+    },
+    "department": "IT",
+    "supervisor": "Sophie Koch"
+  },
+  {
+    "id": 3,
+    "first_name": "Sophie",
+    "last_name": "Koch",
+    "birthdate": "1992-07-08",
+    "physical_attributes": {
+      "height": 165,
+      "weight": 55
+    },
+    "adress": {
+      "street": "Hauptstraße 789",
+      "city": "Hauptstadt",
+      "zip_code": "98765"
+    },
+    "department": "HR",
+    "supervisor": "Lukas Weber"
+  },
+  {
+    "id": 4,
+    "first_name": "Lukas",
+    "last_name": "Weber",
+    "birthdate": "1988-03-19",
+    "physical_attributes": {
+      "height": 190,
+      "weight": 80
+    },
+    "adress": {
+      "street": "Hauptstraße 123",
+      "city": "Hauptstadt",
+      "zip_code": "12345"
+    },
+    "department": "Marketing",
+    "supervisor": "Laura Fischer"
+  },
+  {
+    "id": 5,
+    "first_name": "Laura",
+    "last_name": "Fischer",
+    "birthdate": "1995-09-30",
+    "physical_attributes": {
+      "height": 170,
+      "weight": 65
+    },
+    "adress": {
+      "street": "Bundesstraße 456",
+      "city": "Bundesstadt",
+      "zip_code": "54321"
+    },
+    "department": "IT",
+    "supervisor": "Anna Müller"
+  }
+]

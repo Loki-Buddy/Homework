@@ -1,0 +1,39 @@
+Aufgabe: Erstelle eine eigene Datei-basierte API
+
+Du erstellst eine kleine API, z. B. für:
+   •    Bücher
+   •    Fahrzeuge
+   •    Pflanzen
+   •    Haustiere
+   •    Produkte
+   •    Filme
+   •    oder vielleicht auch eine Starwars-ähnliche Api
+
+Anforderungen:
+   1.    Datenstruktur als .json-Datei speichern (z. B. daten.json)
+   2.    Hilfsfunktionen: readData() und writeData()
+   3.    Implementiere folgende Routen:
+
+GET /books
+POST /books
+PUT /books/:id
+DELETE /books/:id
+
+Diese Übung ist eine vollständige Wiederholung des heutigen und gestrigen Unterrichts. Bitte schreibe den Code komplett neu, um die gesamte Logik und Technik selbstständig noch einmal durchzudenken und zu verinnerlichen.
+
+Nach der erfolgreichen Umsetzung:
+
+Implementiere zusätzlich eine GET-Route mit einer Suchfunktion über Query-Parameter:
+   •    GET /books/search?titel=abc → z. B. Suche nach Kategorie, Art, Titel o. ä.
+
+Ein Beispiel dazu findest du in meinem GitHub-Repository im Ordner MyFirstExpressApp. Dort haben wir über req.query.city nach Städten in einer User-Liste gefiltert.
+
+Abgabe: Github Repo Link sowie Screenshots von euren API Anfragen in Postman. 
+
+Zusatzaufgabe (optional)
+
+Baue eine Validierung ein: z. B. Name darf nicht leer sein, Alter muss eine Zahl sein, etc.
+Füge eine Logik ein, die verhindert, dass doppelte Namen gespeichert werden.
+
+Ich wünsche ganz viel Erfolg und Spaß & ein schönes Wochenende!
+Suheib
