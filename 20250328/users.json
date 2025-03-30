@@ -1,13 +1,18 @@
 {
     "users": [
         {
+            "id": 1,
             "first_name": "Lukas",
             "last_name": "Schneider",
             "birth_date": "1990-04-12",
-            "physical_attributes": {
-                "height_cm": 180,
-                "weight_kg": 75
-            },
+            "physical_attributes": [
+                {
+                    "height_cm": 180
+                },
+                {
+                    "weight_kg": 75
+                }
+            ],
             "address": {
                 "street": "Musterstraße",
                 "house_number": 12,
@@ -16,13 +21,18 @@
             }
         },
         {
+            "id": 2,
             "first_name": "Anna",
             "last_name": "Fischer",
             "birth_date": "1985-07-23",
-            "physical_attributes": {
-                "height_cm": 165,
-                "weight_kg": 60
-            },
+            "physical_attributes": [
+                {
+                    "height_cm": 165
+                },
+                {
+                    "weight_kg": 60
+                }
+            ],
             "address": {
                 "street": "Bahnhofstraße",
                 "house_number": 5,
@@ -31,13 +41,18 @@
             }
         },
         {
+            "id": 3,
             "first_name": "Tom",
             "last_name": "Berger",
             "birth_date": "1995-02-14",
-            "physical_attributes": {
-                "height_cm": 175,
-                "weight_kg": 70
-            },
+            "physical_attributes": [
+                {
+                    "height_cm": 175
+                },
+                {
+                    "weight_kg": 70
+                }
+            ],
             "address": {
                 "street": "Bahnhofstraße",
                 "house_number": 8,
@@ -46,13 +61,18 @@
             }
         },
         {
+            "id": 4,
             "first_name": "Sophie",
             "last_name": "Weber",
             "birth_date": "1998-11-30",
-            "physical_attributes": {
-                "height_cm": 170,
-                "weight_kg": 65
-            },
+            "physical_attributes": [
+                {
+                    "height_cm": 170
+                },
+                {
+                    "weight_kg": 65
+                }
+            ],
             "address": {
                 "street": "Goethestraße",
                 "house_number": 22,
@@ -61,13 +81,18 @@
             }
         },
         {
+            "id": 5,
             "first_name": "Maximilian",
             "last_name": "Hoffmann",
             "birth_date": "1992-06-05",
-            "physical_attributes": {
-                "height_cm": 185,
-                "weight_kg": 80
-            },
+            "physical_attributes": [
+                {
+                    "height_cm": 185
+                },
+                {
+                    "weight_kg": 80
+                }
+            ],
             "address": {
                 "street": "Lindenstraße",
                 "house_number": 5,
@@ -76,13 +101,18 @@
             }
         },
         {
+            "id": 6,
             "first_name": "Laura",
             "last_name": "König",
             "birth_date": "1993-09-17",
-            "physical_attributes": {
-                "height_cm": 168,
-                "weight_kg": 58
-            },
+            "physical_attributes": [
+                {
+                    "height_cm": 168
+                },
+                {
+                    "weight_kg": 58
+                }
+            ],
             "address": {
                 "street": "Marktplatz",
                 "house_number": 3,
@@ -91,13 +121,18 @@
             }
         },
         {
+            "id": 7,
             "first_name": "Benjamin",
             "last_name": "Schröder",
             "birth_date": "1987-12-08",
-            "physical_attributes": {
-                "height_cm": 178,
-                "weight_kg": 77
-            },
+            "physical_attributes": [
+                {
+                    "height_cm": 178
+                },
+                {
+                    "weight_kg": 77
+                }
+            ],
             "address": {
                 "street": "Schillerstraße",
                 "house_number": 10,
@@ -106,13 +141,18 @@
             }
         },
         {
+            "id": 8,
             "first_name": "Emilia",
             "last_name": "Wagner",
             "birth_date": "1999-05-19",
-            "physical_attributes": {
-                "height_cm": 162,
-                "weight_kg": 55
-            },
+            "physical_attributes": [
+                {
+                    "height_cm": 162
+                },
+                {
+                    "weight_kg": 55
+                }
+            ],
             "address": {
                 "street": "Wilhelmstraße",
                 "house_number": 7,
@@ -121,13 +161,18 @@
             }
         },
         {
+            "id": 9,
             "first_name": "Paul",
             "last_name": "Meier",
             "birth_date": "1991-08-25",
-            "physical_attributes": {
-                "height_cm": 182,
-                "weight_kg": 78
-            },
+            "physical_attributes": [
+                {
+                    "height_cm": 182
+                },
+                {
+                    "weight_kg": 78
+                }
+            ],
             "address": {
                 "street": "Friedrichstraße",
                 "house_number": 15,
@@ -136,13 +181,18 @@
             }
         },
         {
+            "id": 10,
             "first_name": "Lisa",
             "last_name": "Braun",
             "birth_date": "1986-03-11",
-            "physical_attributes": {
-                "height_cm": 166,
-                "weight_kg": 63
-            },
+            "physical_attributes": [
+                {
+                    "height_cm": 166
+                },
+                {
+                    "weight_kg": 63
+                }
+            ],
             "address": {
                 "street": "Ringstraße",
                 "house_number": 9,
