@@ -70,13 +70,13 @@ app.put("/users/:id/physical_attributes", (req, res) => {
     }
 });
 
-app.delete("/users/:id", (req, res) => {
+/* app.delete("/users/:id", (req, res) => {
     const users = readFile();
     const id = req.params.id;
-    const foundedUser = users.findIndex(user => user.id == id);
+    const foundedUser = users(user => user.id == id);
     const deletedUser = users.splice(foundedUser, 1);
     writeFile(users);
     res.json("Erfolgreich gelöscht: " + deletedUser);
-});
+}); */
 
 app.listen(3002);
