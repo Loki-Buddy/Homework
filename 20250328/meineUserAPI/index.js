@@ -135,33 +135,14 @@ app.get("/users/:id", (req, res) => {
     }
 });
 
-/* app.get("/users/search", (req, res) => {
+app.get("/search", (req, res) => {
     const users = readFile(); // Lädt die Benutzer aus der Datei
-    console.log("Geladene Benutzer:", users); // Debugging-Log
-    const first_name = req.query.first_name; // Liest den Query-Parameter
-    console.log("Query-Parameter 'first_name':", first_name); // Debugging-Log
-
-    // Überprüfen, ob der Query-Parameter vorhanden ist
-    if (!first_name) {
-        return res.status(400).send("Bitte geben Sie einen gültigen 'first_name'-Parameter an.");
-    }
-
-    // Filtert die Benutzer basierend auf dem 'first_name'-Feld (Groß-/Kleinschreibung ignorieren)
-    const filteredUsers = users.filter(user => 
-        user.first_name.toLowerCase() === first_name.toLowerCase()
-    );
-
-    console.log("Gefilterte Benutzer:", filteredUsers); // Debugging-Log
-
-    // Gibt die gefilterten Benutzer zurück oder eine Nachricht, wenn keine gefunden wurden
-    if (filteredUsers.length === 0) {
-        return res.status(404).send("Keine Benutzer mit dem angegebenen Vornamen gefunden.");
-    }
-
-    res.json(filteredUsers);
-}); */
+    const queryparams = req.query; // Holt die Suchparameter aus der Anfrage
+    console.log(queryparams);
+    
+});
 
 // Startet den Server auf Port 3002
-app.listen(3002, () => {
-    console.log("Server läuft auf http://localhost:3002");
+app.listen(5000, () => {
+    console.log("Server läuft auf http://localhost:5000");
 });
