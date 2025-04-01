@@ -139,7 +139,7 @@ app.get("/search", (req, res) => {
     let users;
     try {
         users = readFile();
-        const { id,first_name, last_name, birthdate, height, weight, street, city, zip_code } = req.query;
+        const { id,first_name, last_name } = req.query;
         if(id){
             const user = users.find(user => user.id == id);
             if (user) {
@@ -158,54 +158,6 @@ app.get("/search", (req, res) => {
         }
         if (last_name) {
             const user = users.find(user => user.last_name.toLowerCase() == last_name.toLowerCase());
-            if (user) {
-                res.json(user);
-            } else {
-                res.status(404).send("User not found");
-            }
-        }
-        if (birthdate) {
-            const user = users.find(user => user.birthdate == birthdate);
-            if (user) {
-                res.json(user);
-            } else {
-                res.status(404).send("User not found");
-            }
-        }
-        if (height) {
-            const user = users.find(user => user.physical_attributes.height == height);
-            if (user) {
-                res.json(user);
-            } else {
-                res.status(404).send("User not found");
-            }
-        }
-        if (weight) {
-            const user = users.find(user => user.physical_attributes.weight == weight);
-            if (user) {
-                res.json(user);
-            } else {
-                res.status(404).send("User not found");
-            }
-        }
-        if (street) {
-            const user = users.find(user => user.address.street.toLowerCase() == street.toLowerCase());
-            if (user) {
-                res.json(user);
-            } else {
-                res.status(404).send("User not found");
-            }
-        }
-        if (city) {
-            const user = users.find(user => user.address.city.toLowerCase() == city.toLowerCase());
-            if (user) {
-                res.json(user);
-            } else {
-                res.status(404).send("User not found");
-            }
-        }
-        if (zip_code) {
-            const user = users.find(user => user.address.zip_code == zip_code);
             if (user) {
                 res.json(user);
             } else {

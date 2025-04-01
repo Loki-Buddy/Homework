@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>User Management</h1>
+    <section>
+        <h2>Benutzer hinzufügen</h2>
+        <input type="text" id="first-name" placeholder="Vorname">
+        <input type="text" id="last-name" placeholder="Nachname">
+        <input type="date" id="birthdate" placeholder="Geburtsdatum">
+        <button onclick="addUser()">Hinzufügen</button>
+    </section>
+    <section>
+        <h2>Benutzer suchen</h2>
+        <input type="text" id="search-query" placeholder="Vorname suchen">
+        <button onclick="searchUsers()">Suchen</button>
+    </section>
+    <section>
+        <h2>Benutzerliste</h2>
+        <ul id="user-list"></ul>
+    </section>
+</body>
+</html>
