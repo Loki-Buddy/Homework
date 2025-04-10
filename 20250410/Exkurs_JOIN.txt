@@ -1,0 +1,32 @@
+EXKURS zu JOIN
+
+Merken:
+    Wenn ich einen JOIN (LEFT/RIGHT/INNER/ ... nur JOIN ist eine Kurzschreibweise für INNER JOIN) verwende, brauche ich die anderen Tabellen im FROM NICHT zu definieren.
+    OHNE JOIN muss ich die Tabelle im FROM definieren und die Bedingungen im WHERE mittels AND/OR auseinander klamüsern.
+
+chatGPT sagt:
+    FULL JOIN (FULL OUTER JOIN): !!! NICHT in SQLite enthalten !!!
+        In SQL gibt es den FULL JOIN (auch bekannt als FULL OUTER JOIN), der alle Zeilen aus beiden Tabellen zurückgibt,
+        egal ob eine Übereinstimmung vorhanden ist oder nicht. Wenn es keine Übereinstimmung gibt, werden die fehlenden Werte mit NULL aufgefüllt.
+        In SQLite kannst du einen FULL JOIN simulieren, indem du einen LEFT JOIN und einen RIGHT JOIN mit UNION kombinierst.
+
+    INNER JOIN:
+        Gibt nur Zeilen zurück, die in beiden Tabellen eine Übereinstimmung haben.
+    
+    LEFT JOIN (LEFT OUTER JOIN):
+        Gibt alle Zeilen aus der linken Tabelle zurück und fügt NULL für nicht übereinstimmende Zeilen aus der rechten Tabelle hinzu.
+    
+    RIGHT JOIN (RIGHT OUTER JOIN):
+        Gibt alle Zeilen aus der rechten Tabelle zurück und fügt NULL für nicht übereinstimmende Zeilen aus der linken Tabelle hinzu.
+        In SQLite nicht direkt unterstützt, aber man kann es durch einen LEFT JOIN mit vertauschten Tabellen simulieren.
+    
+    CROSS JOIN:
+        Gibt das Kartenprodukt (Kreuzprodukt) der beiden Tabellen zurück.
+        Jede Zeile der ersten Tabelle wird mit jeder Zeile der zweiten Tabelle kombiniert, ohne Bedingungen.
+    
+    UNION:
+        Wird verwendet, um Ergebnisse von mehreren SELECT-Abfragen zusammenzuführen.
+        INNER JOIN, LEFT JOIN, CROSS JOIN usw. können in den SELECT-Abfragen verwendet werden, bevor sie mit UNION kombiniert werden.
+        UNION entfernt doppelte Zeilen, während UNION ALL alle Zeilen (inklusive Duplikate) zurückgibt.
+        UNION erfordert, dass alle SELECT-Abfragen die gleiche Anzahl und den gleichen Datentyp von Spalten haben.
+
