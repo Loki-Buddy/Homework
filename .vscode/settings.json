@@ -1,0 +1,11 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "Tiere",
+            "group": "School",
+            "database": "${workspaceFolder:Homework}/20250414/TierheimApiMitSQlite_Madness/tiere.db"
+        }
+    ]
+}
