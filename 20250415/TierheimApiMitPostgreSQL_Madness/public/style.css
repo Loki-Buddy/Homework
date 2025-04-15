@@ -1,0 +1,40 @@
+body {
+    margin-left : 25px;
+    background-color: rgba(28,28,28);
+}
+
+h1{
+    color: orange;
+}
+
+li {
+    color:aliceblue;
+}
+
+hr{
+    border: 1px solid black;
+    margin:20px 250px 20px 0px;
+}
+
+button {
+    margin-left: 15px;
+}
+
+#new_Animal_Formular {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Abstand zwischen den Elementen */
+    margin-top: 20px; /* Abstand nach oben */
+}
+
+.animal-input {
+    width: 200px; /* Breite der Input-Felder */
+    padding: 5px; /* Innenabstand */
+    font-size: 14px; /* Schriftgröße */
+    border: 1px solid #ccc; /* Rahmen */
+    border-radius: 4px; /* Abgerundete Ecken */
+}
+
+#buttonSubmit {
+    margin-top: 20px; /* Abstand nach oben */
+}
