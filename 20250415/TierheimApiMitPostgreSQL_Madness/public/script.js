@@ -9,16 +9,6 @@ const inputAge = document.getElementById("inputAge");
 const inputGewicht = document.getElementById("inputGewicht");
 const buttonSubmit = document.getElementById("buttonSubmit");
 
-// buttonShowAnimals.addEventListener("click", () => {
-//     fetch("http://127.0.0.1:3000/tiere", )
-//     .then(res => res.json())
-//     .then(data => displayData(data))
-
-//     function displayData(data) {
-//         console.log(data)
-//     }
-// });
-
 buttonShowAnimals.addEventListener("click", async () => {
     const res = await fetch("http://127.0.0.1:3000/tiere");
     displayData(await res.json());
@@ -44,11 +34,11 @@ buttonShowAnimals.addEventListener("click", async () => {
     }
 });
 
-async function deleteAnimal(id) {
+/* async function deleteAnimal(id) {
     await fetch(`http://127.0.0.1:3000/tiere/${id}`, {
         method: "DELETE"
     });
-}
+} */
 
 buttonSubmit.addEventListener("click", async () => {
     const tierart = inputTierart.value;
