@@ -57,7 +57,6 @@ app.delete("/tiere/:id", (req, res) => {
     const id = req.params.id;
     db.run(`DELETE FROM tiere WHERE id = ?;`, [id]);
     res.status(204).send("Eintrag gelöscht!");
-    //res.send("Eintrag gelöscht!");
 });
 
 
