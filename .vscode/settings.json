@@ -2,13 +2,6 @@
     "sqltools.connections": [
         {
             "previewLimit": 50,
-            "driver": "SQLite",
-            "name": "Tiere",
-            "group": "School",
-            "database": "${workspaceFolder:Homework}/20250414/TierheimApiMitSQlite_Madness/tiere.db"
-        },
-        {
-            "previewLimit": 50,
             "server": "localhost",
             "port": 5432,
             "askForPassword": true,
@@ -17,6 +10,13 @@
             "group": "PostGres",
             "database": "Tierklinik",
             "username": "postgres"
+        },
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "MainCluster",
+            "group": "SQLite",
+            "database": "${workspaceFolder:Homework}/20250414/TierheimApiMitSQlite_Madness/tiere.db"
         }
     ]
 }
