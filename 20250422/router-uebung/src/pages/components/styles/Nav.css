@@ -1,0 +1,18 @@
+div {
+    text-align: center;
+    color: rgb(0, 238, 255);
+    margin-bottom: 15px;
+}
+
+a:-webkit-any-link {
+    margin-right: 15px;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+a:-webkit-any-link:hover {
+    text-shadow: 1px 1px 10px rgb(255, 165, 0);
+    text-decoration: underline;
+    text-decoration-color: rgb(0, 238, 255);
+}

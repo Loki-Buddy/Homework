@@ -1,0 +1,13 @@
+.listing-title {
+    border: 2px solid rgb(0, 238, 255);
+    box-shadow: 1px 1px 25px orange;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 300px;
+    background-color: rgb(28,28,28);
+    transition: transform 0.5s;
+  }
+  
+  .listing-title:hover {
+    transform: scale(1.05);
+  }
