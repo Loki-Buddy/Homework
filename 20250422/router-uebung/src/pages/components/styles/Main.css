@@ -1,8 +1,21 @@
-.main-container {
+.home-container {
+    
     text-align: center;
     margin-left: 20%;
     margin-right:20%;
     margin-top: 25px;
     margin-bottom: 45px;
     border-radius: 11px;
+}
+
+.pokemon-grid {
+    display: flex;
+    flex-wrap: wrap; /* Ermöglicht das Umbrechen der Items */
+    gap: 20px; /* Abstand zwischen den Items */
+    justify-content: center; /* Zentriert die Items */
+}
+
+.pokemon-grid > * {
+    flex: 1 1 calc(33.333% - 20px); /* Drei Items pro Zeile */
+    box-sizing: border-box; /* Verhindert Überlauf durch Padding/Borders */
 }

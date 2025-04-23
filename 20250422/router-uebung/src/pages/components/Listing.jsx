@@ -1,15 +1,16 @@
-import React from 'react';
-import './styles/Listing.css';
+import React from "react";
+import "./styles/Listing.css";
 
-function Listing(props) {
+function Listing({ Name, Art, image, onNameClick }) {
   return (
     <div className="listing-title">
-        <img width="100px" src={props.image} alt="bild" />
-        <h3>{props.Name}</h3>
-        <h4>{props.Art}</h4>
-        <h4>{props.Schwaeche}</h4>
+      <img width="100px" src={image} alt={Name} />
+      <h3 onClick={onNameClick} style={{ cursor: "pointer", color: "blue" }}>
+        {Name}
+      </h3>
+      <h4>Art: {Art}</h4>
     </div>
-  )
+  );
 }
 
-export default Listing
+export default Listing;

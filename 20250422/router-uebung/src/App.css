@@ -1,4 +1,4 @@
-header, footer {
+header, main, footer {
   border: 2px solid rgb(0, 238, 255);
   box-shadow: 1px 1px 25px orange;
   margin-left: 20%;
@@ -8,10 +8,16 @@ header, footer {
   border-radius: 11px;
 }
 
-h1, h2 ,h3, h4, h5 {
+h1, h2 ,h3, h4 {
   color: rgb(255, 165, 0);
   text-shadow: 1px 1px 25px;
   margin-bottom:0px
+}
+
+h5{
+  color: rgb(255, 165, 0);
+  text-shadow: 1px 1px 25px;
+  margin-top: 0px;
 }
 
 header h1 {

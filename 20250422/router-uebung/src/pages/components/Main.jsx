@@ -4,7 +4,7 @@ import Listing from './Listing';
 import './styles/Main.css'; // Importiere die CSS-Datei
 
 function Main() {
-    const [anzahl, setAnzahl] = useState(1);
+    const [anzahl, setAnzahl] = useState(3);
     const pokemon = [
         {Id: 1, Name: "Bulbasaur" , Art: "Pflanze", Schwaeche: "Wasser", Image: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/001.png"},
         {Id: 2, Name: "Ivysaur" , Art: "Pflanze", Schwaeche: "Wasser", Image: "https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/detail/002.png"},
@@ -29,7 +29,7 @@ function Main() {
     ];
   
     return (
-        <div className="main-container">
+        <div className="home-container">
             <div className="pokemon-grid">
                 {pokemon.slice(0, anzahl).map((pokemon) => (
                     <Listing 
@@ -41,7 +41,7 @@ function Main() {
                     />
                 ))}
             </div>
-            <button onClick={() => setAnzahl(anzahl + 1)}>Mehr Pokémon</button>
+            <button onClick={() => setAnzahl(anzahl + 3)}>Mehr Pokémon</button>
         </div>
     );
 }

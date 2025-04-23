@@ -9,6 +9,7 @@ function Nav() {
             <Link to="/contact">Contact</Link>
             <Link to="/faq">FAQ</Link>
             <Link to="/impressum">Impressum</Link>
+            <Link to="/pokedex">Pokemon</Link>
         </div>
     )
 }
