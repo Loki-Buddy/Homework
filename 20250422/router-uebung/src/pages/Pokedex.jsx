@@ -9,7 +9,7 @@ function Pokedex() {
   useEffect(() => {
     const fetchPokemon = async () => {
       try {
-        const response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=20");
+        const response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=151");
         const data = await response.json();
         const detailedPokemon = await Promise.all(
           data.results.map(async (poke) => {
@@ -27,8 +27,8 @@ function Pokedex() {
   }, []);
 
   const playSound = (id) => {
-    const audio = new Audio(`https://veekun.com/dex/media/pokemon/cries/${id}.ogg`);
-    audio.volume = 0.35; // Lautstärke auf 50% setzen
+    const audio = new Audio(`https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/${id}.ogg`);
+    audio.volume = 0.35; // Lautstärke auf 35% setzen
     audio.play();
   };
 
@@ -45,7 +45,7 @@ function Pokedex() {
           />
         ))}
       </div>
-      <button onClick={() => setAnzahl((prev) => Math.min(prev + 3, pokemon.length))}>
+      <button onClick={() => setAnzahl((prev) => Math.min(prev + 148, pokemon.length))}>
         Mehr Pokémon
       </button>
     </div>
