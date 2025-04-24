@@ -9,6 +9,7 @@ import reportWebVitals from './reportWebVitals';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Pokedex from './pages/Pokedex';
+import PokedexDetails from './pages/PokedexDetails';
 import Faq from './pages/Faq';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -22,6 +23,7 @@ root.render(
         <Route path="/contact" element={<Contact />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/pokedex" element={<Pokedex />} />
+        <Route path="/pokemon/:id" element={<PokedexDetails />} />
       </Routes>
     <Footer />
     </Router>

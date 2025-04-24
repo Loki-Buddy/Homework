@@ -26,22 +26,16 @@ function Pokedex() {
     fetchPokemon();
   }, []);
 
-  const playSound = (id) => {
-    const audio = new Audio(`https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/${id}.ogg`);
-    audio.volume = 0.35;
-    audio.play();
-  };
-
   return (
     <div className="home-container">
       <div className="pokemon-grid">
         {pokemon.slice(0, anzahl).map((poke) => (
           <Listing
             key={poke.id}
+            id={poke.id}
             Name={poke.name}
             Art={poke.types.map((type) => type.type.name).join(", ")}
             image={poke.sprites.front_default}
-            onNameClick={() => playSound(poke.id)}
           />
         ))}
       </div>

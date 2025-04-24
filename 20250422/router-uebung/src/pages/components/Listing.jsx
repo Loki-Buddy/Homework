@@ -1,10 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./styles/Listing.css";
 
-function Listing({ Name, Art, image, onNameClick }) {
+function Listing({ Name, Art, image, id, onNameClick }) {
   return (
     <div className="listing-title">
-      <img width="100px" src={image} alt={Name} />
+      <Link to={`/pokemon/${id}`}>
+        <img width="100px" src={image} alt={Name} style={{ cursor: "pointer" }} />
+      </Link>
       <h3 onClick={onNameClick} style={{ cursor: "pointer", color: "blue" }}>
         {Name}
       </h3>
