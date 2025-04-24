@@ -28,7 +28,7 @@ function Pokedex() {
 
   const playSound = (id) => {
     const audio = new Audio(`https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/${id}.ogg`);
-    audio.volume = 0.35; // Lautstärke auf 35% setzen
+    audio.volume = 0.35;
     audio.play();
   };
 
@@ -45,7 +45,7 @@ function Pokedex() {
           />
         ))}
       </div>
-      <button onClick={() => setAnzahl((prev) => Math.min(prev + 148, pokemon.length))}>
+      <button onClick={() => setAnzahl((prev) => Math.min(prev + 3, pokemon.length))}>
         Mehr Pokémon
       </button>
     </div>
